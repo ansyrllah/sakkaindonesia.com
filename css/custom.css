@@ -1,0 +1,126 @@
+body {
+    color: #002921;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background: #039484;
+    border: 0;
+    padding: 9px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: medium;
+    /* --bs-btn-active-bg: #039484; */
+}
+
+.btn-primary:hover {
+    background: #00413a;
+    border: 0;
+    padding: 9px 20px 10px 20px;
+}
+.btn-primary::after {
+    background: #036156;
+    border: 0;
+    padding: 9px 20px 10px 20px;
+}
+
+/* .nav-link :hover {
+    text-shadow: none #002921;
+} */
+
+.nav-link {
+    /* font-weight: bold; */
+    color: #fff;
+    /* background-color: #007bff;
+    border-color: #007bff; */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff;
+    /* background-color: #0069d9;
+    border-color: #0062cc; */
+    text-decoration: none;
+}
+
+.nav-link:focus,
+.nav-link.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #002921;
+    font-size: 42px;
+}
+body h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    color: #002921;
+    font-size: 35px;
+}
+body h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #002921;
+    font-size: 24px;
+}
+
+.header p,
+li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #002921a8;
+}
+.navbar-nav .nav-link {
+    color: #002921;
+}
+
+.list-group-item {
+    border-width: 0;
+}
+
+.list-group-flush > .list-group-item {
+    border-width: 0 0 0;
+}
+/* 
+.card-img {
+    border-radius: 15px;
+} */
+
+.card-img-top {
+    border-radius: 15px;
+}
+
+.card {
+    border-radius: 15px;
+    border-width: 0;
+}
+
+.product-details > .btn {
+    border-width: 0;
+}
+
+.product-details img {
+    border-radius: 15px;
+}
+
+.contact-form {
+    border: #004d3f75 solid;
+    border-radius: 15px;
+    max-width: 450px;
+}
+
+.why .list-group-item div {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    padding-bottom: 5px;
+    align-self: center;
+}
+
+.why .list-group-item img {
+    margin-left: 10px;
+}
