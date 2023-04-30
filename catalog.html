@@ -15,16 +15,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
 
         <title>Sakka Sportwear</title>
-        <link rel="icon" href="assets/image/logo-sakka.jpg" />
-        <!-- <link rel="apple-" href="assets/image/1.jpg" /> -->
+        <link rel="icon" href="assets/image/logo/logo-sakka-icon.png" />
+        <link rel="apple-" href="assets/image/logo/logo-sakka-icon.png" />
     </head>
 
     <body>
         <!-- START NAVBAR -->
-        <nav class="navbar py-4 navbar-expand-lg">
+        <nav class="navbar py-4 navbar-expand-lg fixed-top bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img class="img-fluid" src="assets/image/logo-sakka-sportwear.png" width="222" alt="" />
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="assets/image/logo/logo-sakka-sportwear-dark.png" width="222" alt="" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,19 +34,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active align-self-center">
-                            <a class="nav-link" href="#">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link align-self-center" href="#">Produk</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link align-self-center" href="#">Testimoni</a>
+                            <a class="nav-link" href="index.html#about">Tentang Kami</a>
                         </li>
                         <li class="nav-item align-self-center">
-                            <a class="nav-link" href="#">Kontak</a>
+                            <a class="nav-link" href="index.html#product-details">Produk</a>
                         </li>
                         <li class="nav-item align-self-center">
-                            <a class="nav-link" href="#">Produk</a>
+                            <a class="nav-link" href="index.html#testimoni">Testimoni</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="index.html#hubungi-kami">Kontak</a>
+                        </li>
+                        <li class="ps-2 nav-item align-self-center">
+                            <a href="https://api.whatsapp.com/send?phone=6289665994510" class="btn btn-primary">Pesan Sekarang</a>
                         </li>
                     </ul>
                 </div>
@@ -57,77 +57,14 @@
         <!-- START PRODUCT DETAIL -->
         <section class="product-details">
             <div class="container">
-                <div class="row">
-                    <div class="col mt-5 mb-4">
-                        <h2 class="text-center">Katalog Produk Terbaik Kami</h2>
-                    </div>
+                <div class="row" id="catalogsTitle">
+                    <!-- Ditambahkan pakai javascript -->
                 </div>
-
-                <!-- <div class="mb-3 row kategori">
-                    <div class="d-flex justify-content-center pe-0 ps-0 col">
-                        <button class="btn btn-secondary border-0 bg-transparent active" data-kategori="semua">
-                            <img src="assets/image/1 bola.png" width="100%" alt="" />
-                        </button>
-                    </div>
-                    <div class="d-flex justify-content-center pe-0 ps-0 col">
-                        <button class="btn btn-secondary border-0 bg-transparent" data-kategori="futsal">
-                            <img src="assets/image/1 bola.png" width="100%" alt="" />
-                        </button>
-                    </div>
-                    <div class="d-flex justify-content-center pe-0 ps-0 col">
-                        <button class="btn btn-secondary border-0 bg-transparent" data-kategori="c">
-                            <img src="assets/image/1 bola.png" width="100%" alt="" />
-                        </button>
-                    </div>
-                </div> -->
 
                 <!-- Katalog Jersey -->
                 <div class="container">
                     <div class="row justify-content-center" id="catalogs">
-                        <!-- Kategori Running -->
-                        <!-- <div class="col mb-3 produk kategori-b">
-                            <img width="255px" src="assets/image/11 volly.png" alt="deskripsi gambar kedua" />
-                        </div> -->
-
-                        <!-- Kategori Cycling -->
-                        <!-- <div class="col mb-3 produk kategori-b">
-                            <img width="255px" src="assets/image/11 volly.png" alt="deskripsi gambar kedua" />
-                        </div> -->
-
-                        <!-- Kategori Basket -->
-                        <!-- <div class="col mb-3 produk kategori-b">
-                            <img width="255px" src="assets/image/11 volly.png" alt="deskripsi gambar kedua" />
-                        </div> -->
-
-                        <!-- Kategori Voly -->
-                        <!-- <div class="col mb-3 produk kategori-b">
-                            <img width="255px" src="assets/image/11 volly.png" alt="deskripsi gambar kedua" />
-                        </div> -->
-
-                        <!-- Kategori Futsal -->
-                        <!-- <div class="col mb-3 produk kategori-futsal">
-                            <img class="justify-content-center" width="255px" src="assets/image/1.jpg" alt="deskripsi gambar pertama" />
-                        </div> -->
-
-                        <!-- Kategori Golf -->
-                        <!-- <div class="col mb-3 produk kategori-b">
-                            <img width="255px" src="assets/image/11 volly.png" alt="deskripsi gambar kedua" />
-                        </div> -->
-
-                        <!-- Kategori Motorcycle -->
-                        <!-- <div class="col mb-3 produk kategori-c">
-                            <img width="255px" src="assets/image/11.png" alt="deskripsi gambar ketiga" />
-                        </div> -->
-
-                        <!-- Kategori Table Tennis -->
-                        <!-- <div class="col mb-3 produk kategori-c">
-                            <img width="255px" src="assets/image/11.png" alt="deskripsi gambar ketiga" />
-                        </div> -->
-
-                        <!-- Kategori Archery -->
-                        <!-- <div class="col mb-3 produk kategori-c">
-                            <img width="255px" src="assets/image/11.png" alt="deskripsi gambar ketiga" />
-                        </div> -->
+                        <!-- Ditambahkan pakai javascript -->
                     </div>
                 </div>
                 <!-- Akhir Katalog Jersey -->
@@ -144,19 +81,16 @@
                         </a>
                         <p>Komitmen kami adalah memberikan kenyamanan dalam beraktifitas olahraga dengan semangat "Keep Cool In Motion".</p>
 
-                        <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        <a href="https://api.whatsapp.com/send?phone=6289665994510" class="btn btn-primary">Pesan Sekarang</a>
                     </div>
-
-                    <!-- <div class="col mb-2"></div> -->
 
                     <div class="col mb-2">
                         <h5>Perusahaan</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tentang kami</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Produk</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Testimoni</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kontak kami</a></li>
-                            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> -->
+                            <li class="nav-item mb-2"><a href="index.html#about" class="nav-link p-0 text-body-secondary">Tentang kami</a></li>
+                            <li class="nav-item mb-2"><a href="index.html#product-details" class="nav-link p-0 text-body-secondary">Produk</a></li>
+                            <li class="nav-item mb-2"><a href="index.html#testimoni" class="nav-link p-0 text-body-secondary">Testimoni</a></li>
+                            <li class="nav-item mb-2"><a href="index.html#hubungi-kami" class="nav-link p-0 text-body-secondary">Kontak kami</a></li>
                         </ul>
                     </div>
 
@@ -166,8 +100,6 @@
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Konsultasi jersey</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jasa design</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Harga</a></li>
-                            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> -->
                         </ul>
                     </div>
 
@@ -176,39 +108,37 @@
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">sakkasport@gmail.com</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">+62 123 456 789</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gede Bage, Kota Bandung</a></li>
-                            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> -->
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jl. Adi Flora Raya No.27, Rancabolang, Kec. Gedebage, Kota Bandung, Jawa Barat 40295</a></li>
                         </ul>
                     </div>
                 </footer>
                 <div class="row">
                     <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-1 border-top">
-                        <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                        <p>&copy; 2023 Sakka Sportwear, Inc. All rights reserved.</p>
                         <ul class="list-unstyled d-flex">
                             <li class="ms-3">
-                                <a class="link-body-emphasis" href="#">
-                                    <img src="assets/icons/ig.svg" alt="" />
+                                <a class="link-body-emphasis" href="https://www.instagram.com/sakkasport.id/">
+                                    <img src="assets/icons/ig_icon.svg" alt="ig-icon" />
                                 </a>
                             </li>
                             <li class="ms-3">
                                 <a class="link-body-emphasis" href="#">
-                                    <img src="assets/icons/fb.svg" alt="" />
+                                    <img src="assets/icons/fb.svg" alt="fb-icon" />
                                 </a>
                             </li>
                             <li class="ms-3">
                                 <a class="link-body-emphasis" href="#">
-                                    <img src="assets/icons/youtube.svg" alt="" />
+                                    <img src="assets/icons/youtube.svg" alt="youtube-icon" />
                                 </a>
                             </li>
                             <li class="ms-3">
                                 <a class="link-body-emphasis" href="#">
-                                    <img src="assets/icons/linkedin.svg" alt="" />
+                                    <img src="assets/icons/linkedin.svg" alt="linkedin" />
                                 </a>
                             </li>
                             <li class="ms-3">
                                 <a class="link-body-emphasis" href="#">
-                                    <img src="assets/icons/twitter.svg" alt="" />
+                                    <img src="assets/icons/twitter.svg" alt="twitter" />
                                 </a>
                             </li>
                         </ul>

@@ -1,6 +1,8 @@
 body {
     color: #002921;
     font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
+    /* display: block; */
 }
 
 .btn-primary {
@@ -9,7 +11,6 @@ body {
     padding: 9px 20px 10px 20px;
     font-size: 18px;
     font-weight: medium;
-    /* --bs-btn-active-bg: #039484; */
 }
 
 .btn-primary:hover {
@@ -22,31 +23,34 @@ body {
     border: 0;
     padding: 9px 20px 10px 20px;
 }
+.btn-primary:active {
+    box-shadow: 0 0 0 2px #039484;
+    background-color: #039484 !important;
+}
 
-/* .nav-link :hover {
-    text-shadow: none #002921;
-} */
-
-.nav-link {
-    /* font-weight: bold; */
-    color: #fff;
-    /* background-color: #007bff;
+.navbar .nav-link {
+    /* color: #fff;
+    background-color: #007bff;
     border-color: #007bff; */
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     transition: all 0.2s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #fff;
-    /* background-color: #0069d9;
-    border-color: #0062cc; */
-    text-decoration: none;
+.navbar .nav-link:hover {
+    /* color: #fff !important;
+    background-color: #039484;
+    text-decoration: none; */
+    /* text-shadow: 5px #039484 !important; */
+    /* text-shadow: #002921 0 0 3px; */
+    box-shadow: 0 0 0 2px #039484;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 
-.nav-link:focus,
-.nav-link.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+.nav-link:focus {
+    box-shadow: 0 0 0 2px #039484;
+    background-color: #039484;
 }
 
 .header h1 {
@@ -85,18 +89,21 @@ li {
 .list-group-flush > .list-group-item {
     border-width: 0 0 0;
 }
-/* 
-.card-img {
-    border-radius: 15px;
-} */
 
 .card-img-top {
     border-radius: 15px;
 }
 
+.img-scroll {
+    object-fit: cover;
+    width: 262px;
+    height: 262px;
+    margin-right: 10px;
+}
 .card {
     border-radius: 15px;
     border-width: 0;
+    display: inline-block;
 }
 
 .product-details > .btn {
@@ -124,3 +131,89 @@ li {
 .why .list-group-item img {
     margin-left: 10px;
 }
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-gutter: stable;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+@media (max-width: 575.98px) {
+    .img-frame {
+        width: 360px !important;
+        margin: 0 !important;
+        justify-content: center !important;
+        padding: 3px 3px !important;
+    }
+    .img-section {
+        width: 360px !important;
+        padding-left: 13px;
+        padding-right: 3px;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        justify-content: center !important;
+        justify-self: center !important;
+        /* padding-right: 15px; */
+    }
+    .about p,
+    h2 {
+        margin: 3px !important;
+    }
+    .about .row,
+    .container {
+        margin-top: 3px !important;
+        padding-top: 5px !important;
+    }
+}
+@media (max-width: 991.98px) {
+    /* .why .img-section {
+        margin: 0 !important;
+    }
+    .img-section {
+        width: 360px !important;
+    } */
+}
+/* 
+@media (min-width: 768px) {
+    ...;
+}
+@media (min-width: 992px) {
+    ...;
+}
+@media (min-width: 1200px) {
+    ...;
+}
+@media (min-width: 1400px) {
+    ...;
+} 
+
+// `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+*/

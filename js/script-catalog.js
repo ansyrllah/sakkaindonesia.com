@@ -164,26 +164,6 @@ function getKatalogArchery(jumlahKatalog) {
     }
 }
 
-// const kategori_futsal = [
-//     { name: 'futsal1', image: 'assets/catalogs/futsal/futsal (1).png' },
-//     { name: 'futsal2', image: 'assets/catalogs/futsal/futsal (2).png' },
-//     { name: 'futsal3', image: 'assets/catalogs/futsal/futsal (3).png' },
-// ];
-
-// // Data produk dengan kategori B
-// const kategori_badminton = [
-//     { name: 'badminton1', image: 'assets/catalogs/badminton/badminton (1).png' },
-//     { name: 'badminton2', image: 'assets/catalogs/badminton/badminton (2).png' },
-//     { name: 'badminton3', image: 'assets/catalogs/badminton/badminton (3).png' },
-// ];
-
-// // Data produk dengan kategori C
-// const productsC = [
-//     { name: 'products C1', image: 'products-c1.jpg' },
-//     { name: 'products C2', image: 'products-c2.jpg' },
-//     { name: 'products C3', image: 'products-c3.jpg' },
-// ];
-
 // Fungsi untuk menampilkan produk berdasarkan kategori yang dipilih
 function showProducts(category) {
     let products;
@@ -229,18 +209,6 @@ function showProducts(category) {
             break;
     }
 
-    // if (category === 'futsal') {
-    //     products = getKatalogFutsal(jumlahKatalogFutsal);
-    //     //   products = [...kategori_futsal];
-    // } else if (category === 'kategori_basket') {
-    //     products = catalog_badminton;
-    // } else if (category === 'C') {
-    //     products = productsC;
-    // } else {
-    //     // Jika tidak ada parameter kategori atau kategori yang dipilih tidak valid, tampilkan semua produk
-    //     products = [...kategori_futsal, ...kategori_badminton, ...productsC];
-    // }
-
     // Tampilkan produk dalam bentuk gambar dan nama produk
     const catalogList = document.getElementById('catalogs');
     if (products === 0) {
@@ -261,6 +229,12 @@ function showProducts(category) {
             )
             .join('');
     }
+    const catalogTitle = document.getElementById('catalogsTitle');
+    catalogTitle.innerHTML = `
+                    <div class="col mt-5 mb-4">
+                        <h2 class="text-center text-capitalize">Katalog ${category} Terbaik</h2>
+                    </div>
+                `;
 }
 
 showProducts(category);
