@@ -150,6 +150,30 @@ li {
     border: 3px solid #fff;
 }
 
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #002921;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.scroll-btn:focus {
+    outline: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
 @media (max-width: 575.98px) {
     .img-frame {
         width: 360px !important;
