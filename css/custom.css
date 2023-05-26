@@ -152,26 +152,39 @@ li {
 
 .scroll-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
     background: transparent;
     border: none;
-    font-size: 2rem;
-    color: #002921;
-    cursor: pointer;
-    z-index: 2;
+    color: #002921 !important;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.scroll-btn:active {
+    background-color: #c0c0c0;
 }
 
 .scroll-btn:focus {
     outline: none;
 }
-
+.scroll-btn:hover{
+    color: #002921;
+}
 .prev {
-    left: 0;
+    left: 60px;
 }
 
 .next {
-    right: 0;
+    right: 85px;
+}
+
+.row.swipe-area {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 575.98px) {
