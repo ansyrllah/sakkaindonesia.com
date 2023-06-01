@@ -2,9 +2,7 @@ body {
     color: #002921;
     font-family: 'Poppins', sans-serif;
     margin-top: 150px;
-    /* display: block; */
 }
-
 .btn-primary {
     background: #039484;
     border: 0;
@@ -12,7 +10,6 @@ body {
     font-size: 18px;
     font-weight: medium;
 }
-
 .btn-primary:hover {
     background: #00413a;
     border: 0;
@@ -27,32 +24,31 @@ body {
     box-shadow: 0 0 0 2px #039484;
     background-color: #039484 !important;
 }
-
 .navbar .nav-link {
-    /* color: #fff;
-    background-color: #007bff;
-    border-color: #007bff; */
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     transition: all 0.2s ease-in-out;
 }
-
 .navbar .nav-link:hover {
-    /* color: #fff !important;
-    background-color: #039484;
-    text-decoration: none; */
-    /* text-shadow: 5px #039484 !important; */
-    /* text-shadow: #002921 0 0 3px; */
     box-shadow: 0 0 0 2px #039484;
     padding-top: 4px;
     padding-bottom: 2px;
 }
-
+#footer .nav-link:hover {
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+#footer .nav-link:focus {
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+    color: white !important;
+    background-color: none !important;
+}
 .nav-link:focus {
+    color: white !important;
     box-shadow: 0 0 0 2px #039484;
     background-color: #039484;
 }
-
 .header h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -71,7 +67,6 @@ body h4 {
     color: #002921;
     font-size: 24px;
 }
-
 .header p,
 li {
     font-family: 'Poppins', sans-serif;
@@ -81,19 +76,15 @@ li {
 .navbar-nav .nav-link {
     color: #002921;
 }
-
 .list-group-item {
     border-width: 0;
 }
-
 .list-group-flush > .list-group-item {
     border-width: 0 0 0;
 }
-
 .card-img-top {
     border-radius: 15px;
 }
-
 .img-scroll {
     object-fit: cover;
     width: 262px;
@@ -105,21 +96,17 @@ li {
     border-width: 0;
     display: inline-block;
 }
-
 .product-details > .btn {
     border-width: 0;
 }
-
 .product-details img {
     border-radius: 15px;
 }
-
 .contact-form {
     border: #004d3f75 solid;
     border-radius: 15px;
     max-width: 450px;
 }
-
 .why .list-group-item div {
     display: flex;
     text-align: end;
@@ -127,23 +114,19 @@ li {
     padding-bottom: 5px;
     align-self: center;
 }
-
 .why .list-group-item img {
     margin-left: 10px;
 }
-
 .scrolling-wrapper {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-gutter: stable;
 }
-
 .scrolling-wrapper::-webkit-scrollbar {
     width: 12px;
     height: 10px;
 }
-
 .scrolling-wrapper::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 10px;
@@ -157,10 +140,8 @@ li {
     background: transparent;
     border: none;
     color: #002921 !important;
-    transition: background-color 0.3s;
-    
+    transition: background-color 0.3s; 
 }
-
 .scroll-btn:hover {
     background-color: #002921;
 }
@@ -178,11 +159,9 @@ li {
 .prev {
     left: 60px;
 }
-
 .next {
     right: 85px;
 }
-
 .row.swipe-area {
     display: flex;
     align-items: center;
@@ -232,33 +211,19 @@ li {
     padding: 0;
     overflow: hidden;
 }
-
 /* untuk modals */
 .modal {
-    /* display: none;
-    position: fixed;
-    z-index: 999;
-    padding-top: 60px;
-    left: 100px;
-    top: 150px;
-    width: 70%;
-    height: 800%;
-    overflow: auto;
-    background-color: #00292139; */
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 35px; /* Location of the box */
-    /* justify-content: center; */
     left: 5% ;
     top: 98px;
     width: 90%; /* Full width */
     height: 84%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    /* background-color: rgb(0,0,0); Fallback color */
     background-color:#036156c9; 
     border-radius: 15px;
-    /* Black w/ opacity */
 }
 .modal-content {
     margin: auto;
@@ -289,7 +254,6 @@ li {
     text-decoration: none;
     cursor: pointer;
 }
-
 #caption {
     margin: auto;
     display: block;
@@ -309,7 +273,6 @@ li {
     to {transform: scale(1);}
     
 }
-
 @media (max-width: 575.98px) {
     .img-frame {
         width: 360px !important;
@@ -325,7 +288,6 @@ li {
         margin-left: 0 !important;
         justify-content: center !important;
         justify-self: center !important;
-        /* padding-right: 15px; */
     }
     .about p,
     h2 {
@@ -336,14 +298,39 @@ li {
         margin-top: 3px !important;
         padding-top: 5px !important;
     }
+    .maps {
+        width: 280px;
+        height: 300px;
+    }
+    .scroll-btn {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background: transparent;
+        border: none;
+        color: #002921 !important;
+        transition: background-color 0.3s; 
+    }
+    .prev {
+        left: 0px;
+    }
+
+    .next {
+        right: 0px;
+    }
+    #hubungi-kami img {
+        width: 30px;
+    }
+    .modal {
+        height: 60%;
+        top: 110px;
+    }
+    .modal-content {
+        max-width: 90%;
+        margin-top: 90px;
+    }
 }
 @media (max-width: 991.98px) {
-    /* .why .img-section {
-        margin: 0 !important;
-    }
-    .img-section {
-        width: 360px !important;
-    } */
 }
 /* 
 @media (min-width: 768px) {
