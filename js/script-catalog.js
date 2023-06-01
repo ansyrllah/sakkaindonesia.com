@@ -222,8 +222,8 @@ function showProducts(category) {
             .map(
                 (products) => `
                         <div class="col mb-3" >
-                            <img src="${products.image}" alt="${products.name}" width="255">
-                            <p> ${products.name} </p>
+                            <img class="catalog-item" src="${products.image}" alt="${products.name}" width="255">
+                            <h5 class="card-title"> ${products.name} </h5>
                         </div>
                     `
             )
@@ -238,3 +238,26 @@ function showProducts(category) {
 }
 
 showProducts(category);
+
+// for modals
+// ambil element modal yang dibutuhkan
+var modal = document.getElementById('myModal');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+var images = document.querySelectorAll('.catalog-item');
+// tambahkan event listener untuk setiap gambar
+images.forEach(function (image) {
+    image.addEventListener('click', function () {
+        modal.style.display = 'block'; // untuk menampilkan modal
+        modalImg.src = this.src; // set gambar modal sesuai dengan yang di klik
+
+        captionText.innerHTML = this.alt;
+        // captionText.innerHTML = this.nextElementSibling.querySelector('.card-title').innerHTML;
+        // set caption modal sesuai dengan caption gambar yang diklik
+    });
+});
+// tambahkan event listener untuk tombol close di modal
+var closeBtn = document.getElementsByClassName('close')[0];
+closeBtn.addEventListener('click', function () {
+    modal.style.display = 'none'; // akan menyembunyikan modal saat tombol di klik
+});

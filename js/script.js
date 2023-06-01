@@ -1,4 +1,3 @@
-
 // data
 const jumlahKerah = 14;
 
@@ -36,9 +35,7 @@ jenisKerahSection.innerHTML = products
     )
     .join(' ');
 
-
-
-// panah 
+// panah
 // $(document).ready(function() {
 //     var scrollWrapper = $('.scrolling-wrapper');
 //     var cards = $('.scrolling-wrapper .card');
@@ -48,13 +45,13 @@ jenisKerahSection.innerHTML = products
 //     var wrapperWidth = scrollWrapper.outerWidth();
 //     var scrollLeftMax = cardsTotalWidth - wrapperWidth;
 //     var scrollLeftMin = 0;
-  
+
 //     function scrollCardsLeft(scrollLeft) {
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
-//     } 
-  
+//     }
+
 //     $('.scroll-btn.next').click(function() {
 //         var scrollingWrapperId = $(this).data('scrolling-wrapper');
 //         var scrollWrapper = $('#' + scrollingWrapperId + ' .scrolling-wrapper')
@@ -68,7 +65,6 @@ jenisKerahSection.innerHTML = products
 //         });
 //   });
 
-
 //   $('.scroll-btn.prev').click(function() {
 //     var scrollingWrapperId = $(this).data('scrolling-wrapper');
 //     var scrollWrapper = $('#' + scrollingWrapperId + ' .scrolling-wrapper')
@@ -79,7 +75,6 @@ jenisKerahSection.innerHTML = products
 //     scrollCardsLeft(scrollLeft);
 // });
 
-
 // $(document).ready(function() {
 //     $('.scroll-btn.prev').click(function() {
 //       var scrollWrapper = $(this).closest('.scrolling-wrapper');
@@ -88,16 +83,16 @@ jenisKerahSection.innerHTML = products
 //       var cardMarginRight = parseInt(cards.first().css('margin-right'));
 //       var scrollLeft = scrollWrapper.scrollLeft() - cardWidth - cardMarginRight;
 //       var scrollLeftMin = 0;
-      
+
 //       if (scrollLeft < scrollLeftMin) {
 //         scrollLeft = scrollLeftMin;
 //       }
-      
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
-  
+
 //     $('.scroll-btn.next').click(function() {
 //       var scrollWrapper = $(this).closest('.scrolling-wrapper');
 //       var cards = scrollWrapper.find('.card');
@@ -107,11 +102,11 @@ jenisKerahSection.innerHTML = products
 //       var wrapperWidth = scrollWrapper.outerWidth();
 //       var cardsTotalWidth = (cardWidth + cardMarginRight) * cards.length;
 //       var scrollLeftMax = cardsTotalWidth - wrapperWidth;
-      
+
 //       if (scrollLeft > scrollLeftMax) {
 //         scrollLeft = scrollLeftMax;
 //       }
-      
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
@@ -127,16 +122,16 @@ jenisKerahSection.innerHTML = products
 //       var cardMarginRight = parseInt(cards.first().css('margin-right'));
 //       var scrollLeft = scrollWrapper.scrollLeft() - cardWidth - cardMarginRight;
 //       var scrollLeftMin = 0;
-  
+
 //       if (scrollLeft < scrollLeftMin) {
 //         scrollLeft = scrollLeftMin;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
-  
+
 //     $('.scroll-btn.next').click(function() {
 //       var scrollingWrapperId = $(this).data('scrolling-wrapper');
 //       var scrollWrapper = $('#' + scrollingWrapperId + ' .scrolling-wrapper');
@@ -147,11 +142,11 @@ jenisKerahSection.innerHTML = products
 //       var wrapperWidth = scrollWrapper.outerWidth();
 //       var cardsTotalWidth = (cardWidth + cardMarginRight) * cards.length;
 //       var scrollLeftMax = cardsTotalWidth - wrapperWidth;
-  
+
 //       if (scrollLeft > scrollLeftMax) {
 //         scrollLeft = scrollLeftMax;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
@@ -167,16 +162,16 @@ jenisKerahSection.innerHTML = products
 //       var cardMarginRight = parseInt(cards.first().css('margin-right'));
 //       var scrollLeft = scrollWrapper.scrollLeft() - cardWidth - cardMarginRight;
 //       var scrollLeftMin = 0;
-  
+
 //       if (scrollLeft < scrollLeftMin) {
 //         scrollLeft = scrollLeftMin;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
-  
+
 //     $('.scroll-btn.next').click(function() {
 //       var scrollingWrapperId = $(this).data('scrolling-wrapper');
 //       var scrollWrapper = $('#' + scrollingWrapperId + ' .scrolling-wrapper');
@@ -187,50 +182,56 @@ jenisKerahSection.innerHTML = products
 //       var wrapperWidth = scrollWrapper.outerWidth();
 //       var cardsTotalWidth = (cardWidth + cardMarginRight) * cards.length;
 //       var scrollLeftMax = cardsTotalWidth - wrapperWidth;
-  
+
 //       if (scrollLeft > scrollLeftMax) {
 //         scrollLeft = scrollLeftMax;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
 //   });
-  
-$(document).ready(function() {
-    $('.scroll-btn.prev').click(function() {
-      var scrollingWrapperId = $(this).data('scrolling-wrapper');
-      var scrollWrapper = $('#' + scrollingWrapperId);
-      var scrollLeft = scrollWrapper.scrollLeft() - scrollWrapper.width()/4;
-      var scrollLeftMin = 0;
-  
-      if (scrollLeft < scrollLeftMin) {
-        scrollLeft = scrollLeftMin;
-      }
-  
-      scrollWrapper.animate({
-        scrollLeft: scrollLeft
-      }, 500);
+
+$(document).ready(function () {
+    $('.scroll-btn.prev').click(function () {
+        var scrollingWrapperId = $(this).data('scrolling-wrapper');
+        var scrollWrapper = $('#' + scrollingWrapperId);
+        var scrollLeft = scrollWrapper.scrollLeft() - scrollWrapper.width() / 4;
+        var scrollLeftMin = 0;
+
+        if (scrollLeft < scrollLeftMin) {
+            scrollLeft = scrollLeftMin;
+        }
+
+        scrollWrapper.animate(
+            {
+                scrollLeft: scrollLeft,
+            },
+            500
+        );
     });
-  
-    $('.scroll-btn.next').click(function() {
-      var scrollingWrapperId = $(this).data('scrolling-wrapper');
-      var scrollWrapper = $('#' + scrollingWrapperId);
-      var scrollLeft = scrollWrapper.scrollLeft() + scrollWrapper.width()/4;
-      var scrollWidth = scrollWrapper[0].scrollWidth;
-      var wrapperWidth = scrollWrapper.width();
-      var scrollLeftMax = scrollWidth - wrapperWidth;
-  
-      if (scrollLeft > scrollLeftMax) {
-        scrollLeft = scrollLeftMax;
-      }
-  
-      scrollWrapper.animate({
-        scrollLeft: scrollLeft
-      }, 500);
+
+    $('.scroll-btn.next').click(function () {
+        var scrollingWrapperId = $(this).data('scrolling-wrapper');
+        var scrollWrapper = $('#' + scrollingWrapperId);
+        var scrollLeft = scrollWrapper.scrollLeft() + scrollWrapper.width() / 4;
+        var scrollWidth = scrollWrapper[0].scrollWidth;
+        var wrapperWidth = scrollWrapper.width();
+        var scrollLeftMax = scrollWidth - wrapperWidth;
+
+        if (scrollLeft > scrollLeftMax) {
+            scrollLeft = scrollLeftMax;
+        }
+
+        scrollWrapper.animate(
+            {
+                scrollLeft: scrollLeft,
+            },
+            500
+        );
     });
-  });
+});
 
 // $(document).ready(function() {
 //     $('.scroll-btn.prev').click(function() {
@@ -238,16 +239,16 @@ $(document).ready(function() {
 //       var scrollWrapper = $('#' + scrollingWrapperId).find('.scrolling-wrapper');
 //       var scrollLeft = scrollWrapper.scrollLeft() - scrollWrapper.width() / 2;
 //       var scrollLeftMin = 0;
-  
+
 //       if (scrollLeft < scrollLeftMin) {
 //         scrollLeft = scrollLeftMin;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
-  
+
 //     $('.scroll-btn.next').click(function() {
 //       var scrollingWrapperId = $(this).data('scrolling-wrapper');
 //       var scrollWrapper = $('#' + scrollingWrapperId).find('.scrolling-wrapper');
@@ -255,11 +256,11 @@ $(document).ready(function() {
 //       var scrollWidth = scrollWrapper[0].scrollWidth;
 //       var wrapperWidth = scrollWrapper.width();
 //       var scrollLeftMax = scrollWidth - wrapperWidth;
-  
+
 //       if (scrollLeft > scrollLeftMax) {
 //         scrollLeft = scrollLeftMax;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
@@ -272,16 +273,16 @@ $(document).ready(function() {
 //       var scrollWrapper = $('#' + scrollingWrapperId).find('.scrolling-wrapper');
 //       var scrollLeft = scrollWrapper.scrollLeft() - scrollWrapper.parent().width() / 2;
 //       var scrollLeftMin = 0;
-  
+
 //       if (scrollLeft < scrollLeftMin) {
 //         scrollLeft = scrollLeftMin;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
-  
+
 //     $('.scroll-btn.next').click(function() {
 //       var scrollingWrapperId = $(this).data('scrolling-wrapper');
 //       var scrollWrapper = $('#' + scrollingWrapperId).find('.scrolling-wrapper');
@@ -289,18 +290,34 @@ $(document).ready(function() {
 //       var scrollWidth = scrollWrapper[0].scrollWidth;
 //       var wrapperWidth = scrollWrapper.parent().width();
 //       var scrollLeftMax = scrollWidth - wrapperWidth;
-  
+
 //       if (scrollLeft > scrollLeftMax) {
 //         scrollLeft = scrollLeftMax;
 //       }
-  
+
 //       scrollWrapper.animate({
 //         scrollLeft: scrollLeft
 //       }, 500);
 //     });
 //   });
-  
-  
-    
-  
-  
+
+// for modals
+// ambil element yang dibutuhkan
+var modal = document.getElementById('myModal');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+var images = document.querySelectorAll('.card-img-top');
+// tambahkan event listener untuk setiap gambar
+images.forEach(function (image) {
+    image.addEventListener('click', function () {
+        modal.style.display = 'block'; // untuk menampilkan modal
+        modalImg.src = this.src; // set gambar modal sesuai dengan yang di klik
+        captionText.innerHTML = this.nextElementSibling.querySelector('.card-title').innerHTML;
+        // set caption modal sesuai dengan caption gambar yang diklik
+    });
+});
+// tambahkan event listener untuk tombol close di modal
+var closeBtn = document.getElementsByClassName('close')[0];
+closeBtn.addEventListener('click', function () {
+    modal.style.display = 'none'; // akan menyembunyikan modal saat tombol di klik
+});
