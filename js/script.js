@@ -1,3 +1,10 @@
+$(document).ready(function () {
+    $('#myCarousel').carousel({
+        interval: 3000, // Interval waktu antara slide (dalam milidetik)
+        wrap: true, // Mengaktifkan pembungkus slide (kembali ke slide pertama setelah slide terakhir)
+    });
+});
+
 // data
 const jumlahKerah = 14;
 
