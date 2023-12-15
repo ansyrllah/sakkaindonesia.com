@@ -20,7 +20,7 @@ function getKatalogRunning(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Running-${i}`,
-                image: `assets/catalogs/running/running (${i}).png`,
+                image: `assets/catalogs/running/running (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -37,7 +37,7 @@ function getKatalogCycling(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Cycling-${i}`,
-                image: `assets/catalogs/cycling/cycling (${i}).png`,
+                image: `assets/catalogs/cycling/cycling (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -54,7 +54,7 @@ function getKatalogBasket(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Basket-${i}`,
-                image: `assets/catalogs/basket/basket (${i}).png`,
+                image: `assets/catalogs/basket/basket (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -71,7 +71,7 @@ function getKatalogVolly(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Volly-${i}`,
-                image: `assets/catalogs/volly/volly (${i}).png`,
+                image: `assets/catalogs/volly/volly (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -88,7 +88,7 @@ function getKatalogFutsal(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Futsal-${i}`,
-                image: `assets/catalogs/futsal/futsal (${i}).png`,
+                image: `assets/catalogs/futsal/futsal (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -105,7 +105,7 @@ function getKatalogGolf(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Golf-${i}`,
-                image: `assets/catalogs/golf/golf (${i}).png`,
+                image: `assets/catalogs/golf/golf (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -122,7 +122,7 @@ function getKatalogMotorcycle(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Motorcycle-${i}`,
-                image: `assets/catalogs/motorcycle/motorcycle (${i}).png`,
+                image: `assets/catalogs/motorcycle/motorcycle (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -139,7 +139,7 @@ function getKatalogTableTennis(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Table Tennis-${i}`,
-                image: `assets/catalogs/table-tennis/table-tennis (${i}).png`,
+                image: `assets/catalogs/table-tennis/table-tennis (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -156,7 +156,7 @@ function getKatalogArchery(jumlahKatalog) {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
                 name: `Katalog Archery-${i}`,
-                image: `assets/catalogs/archery/archery (${i}).png`,
+                image: `assets/catalogs/archery/archery (${i}).webp`,
             };
             katalog.push(produk_item);
         }
