@@ -18,7 +18,7 @@ function getGambarKerah(jumlahKerah) {
         for (let i = 1; i <= jumlahKerah; i++) {
             const kerah_item = {
                 name: `Jenis Kerah-${i}`,
-                image: `assets/image/jenis-kerah/jenis-kerah (${i}).jpg`,
+                image: `assets/image/jenis-kerah/jenis-kerah (${i}).webp`,
             };
             katalog.push(kerah_item);
         }
