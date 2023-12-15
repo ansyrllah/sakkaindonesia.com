@@ -36,7 +36,7 @@ li {
 
 /* Button */
 .btn-primary {
-    background: #039484;
+    background: #039484 !important;
     border: 0;
     padding: 9px 20px 10px 20px;
     font-size: 18px;
@@ -94,11 +94,11 @@ li {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #e03a3c;
+    border: 1px solid #039484;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #e03a3c;
+    background-color: #039484;
 }
 
 .clients .swiper-slide img {
@@ -117,6 +117,75 @@ li {
     filter: none;
 }
 /* End Clients */
+
+/*--------------------------------------------------------------
+# Departments
+--------------------------------------------------------------*/
+.departments {
+    overflow: hidden;
+}
+
+.departments .nav-tabs {
+    border: 0;
+}
+
+.departments .nav-link {
+    border: 0;
+    padding: 12px 15px 12px 0;
+    transition: 0.3s;
+    color: #2c4964;
+    border-radius: 0;
+    border-right: 2px solid #ebf1f6;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.departments .nav-link:hover {
+    color: #039484;
+}
+
+.departments .nav-link.active {
+    color: #039484;
+    border-color: #039484;
+}
+
+.departments .tab-pane.active {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.departments .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c4964;
+}
+
+.departments .details p {
+    color: #777777;
+}
+
+.departments .details p:last-child {
+    margin-bottom: 0;
+}
+
+.departments a {
+    color: #00413a;
+}
+.departments .btn-primary {
+    color: white !important;
+}
+
+@media (max-width: 992px) {
+    .departments .nav-link {
+        border: 0;
+        padding: 15px;
+    }
+
+    .departments .nav-link.active {
+        color: #fff;
+        background: #039484;
+    }
+}
 
 /*--------------------------------------------------------------
 # Factory
@@ -138,7 +207,7 @@ li {
 
 .factory span {
     text-align: center;
-    color: #8815d8;
+    color: #039484;
     display: block;
     margin-bottom: 40px;
     font-size: 18px;
@@ -214,14 +283,14 @@ li {
 .about h3 {
     font-size: 14px;
     font-weight: 700;
-    color: #4154f1;
+    color: #039484;
     text-transform: uppercase;
 }
 
 .about h2 {
     font-size: 24px;
     font-weight: 700;
-    color: #012970;
+    color: #002921;
 }
 
 .about p {
@@ -235,7 +304,7 @@ li {
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
-    background: #4154f1;
+    background: #039484;
     box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -289,7 +358,7 @@ li {
     font-size: 13px;
     display: inline-flex;
     align-items: center;
-    border: 2px solid #e03a3c;
+    border: 2px solid #039484;
 }
 
 .why-sakka .content .why-sakka-btn i {
@@ -298,8 +367,8 @@ li {
 }
 
 .why-sakka .content .why-sakka-btn:hover {
-    background: #e35052;
-    background: #e03a3c;
+    background: #039484;
+    background: #039484;
 }
 
 .why-sakka .icon-boxes .icon-box {
@@ -308,7 +377,7 @@ li {
 
 .why-sakka .icon-boxes .icon-box i {
     font-size: 40px;
-    color: #e03a3c;
+    color: #039484;
     margin-bottom: 10px;
 }
 
@@ -371,7 +440,7 @@ li {
     transform: translateX(-50%);
     font-size: 24px;
     background: #fff;
-    color: #e03a3c;
+    color: #039484;
     border-radius: 50px;
     border: 2px solid #fff;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
@@ -424,7 +493,7 @@ section {
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background: #039484;
     bottom: 0;
     left: calc(50% - 25px);
 }
@@ -645,11 +714,11 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .section-header h2 {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-weight: 700;
     margin: 0;
-    color: #4154f1;
+    color: #039484;
     text-transform: uppercase !important;
     text-align: center;
 }
@@ -660,7 +729,7 @@ section {
     font-size: 38px;
     line-height: 42px;
     font-weight: 700;
-    color: #012970;
+    color: #002921;
     text-align: center;
 }
 
@@ -721,11 +790,11 @@ section {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #4154f1;
+    border: 1px solid #039484;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #4154f1;
+    background-color: #039484;
 }
 
 .testimonials .swiper-slide {
@@ -759,7 +828,7 @@ section {
 
 .contact .info i {
     font-size: 20px;
-    color: #8fc04e;
+    color: #039484;
     float: left;
     width: 44px;
     height: 44px;
@@ -794,7 +863,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-    background: #8fc04e;
+    background: #039484;
     color: #fff;
 }
 
@@ -864,7 +933,7 @@ section {
 }
 
 .contact .php-email-form button[type='submit'] {
-    background: #8fc04e;
+    background: #039484;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -896,7 +965,7 @@ section {
 
 .order .info i {
     font-size: 20px;
-    color: #8fc04e;
+    color: #039484;
     float: left;
     width: 44px;
     height: 44px;
@@ -931,7 +1000,7 @@ section {
 .order .info .email:hover i,
 .order .info .address:hover i,
 .order .info .phone:hover i {
-    background: #8fc04e;
+    background: #039484;
     color: #fff;
 }
 
@@ -1001,7 +1070,7 @@ section {
 }
 
 .order .php-email-form button[type='submit'] {
-    background: #8fc04e;
+    background: #039484;
     border: 0;
     padding: 10px 24px;
     color: #fff;
