@@ -121,21 +121,84 @@ li {
 /*--------------------------------------------------------------
 # Factory
 --------------------------------------------------------------*/
-.factory .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
+
+.factory body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #1d283a;
+    color: white;
 }
 
-.factory .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #e03a3c;
+.factory h1 {
+    text-align: center;
 }
 
-.factory .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #e03a3c;
+.factory span {
+    text-align: center;
+    color: #8815d8;
+    display: block;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.factory ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+    mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+    -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.factory ul > li {
+    grid-area: 1/1;
+    animation: infiniteScroll 20s linear infinite;
+    font-size: 1.3rem;
+    border: 0.5rem solid #0000;
+    text-align: center;
+}
+
+.factory ul > li:nth-child(2) {
+    animation-delay: calc(-0.1428 * 20s);
+}
+
+.factory ul > li:nth-child(3) {
+    animation-delay: calc(-0.2857 * 20s);
+}
+
+.factory ul > li:nth-child(4) {
+    animation-delay: calc(-0.4285 * 20s);
+}
+
+.factory ul > li:nth-child(5) {
+    animation-delay: calc(-0.5714 * 20s);
+}
+
+.factory ul > li:nth-child(6) {
+    animation-delay: calc(-0.7142 * 20s);
+}
+
+.factory ul > li:nth-child(7) {
+    animation-delay: calc(-0.8571 * 20s);
+}
+
+.factory ul.alt li {
+    animation-direction: reverse;
+}
+
+@keyframes infiniteScroll {
+    14.28% {
+        transform: translate(-100%);
+    }
+    14.29% {
+        transform: translate(600%);
+    }
 }
 
 /* End Factory */
