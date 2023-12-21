@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin-top: 150px;
 }
-body h2 {
+/* body h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 550;
     color: #002921;
@@ -16,23 +16,8 @@ body h4 {
     font-weight: 500;
     color: #002921;
     font-size: 24px;
-}
+} */
 /* END GENERAL */
-
-/* Header */
-.header h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #002921;
-    font-size: 42px;
-}
-.header p,
-li {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #002921a8;
-}
-/* End Header */
 
 /* Button */
 .btn-primary {
@@ -121,67 +106,78 @@ li {
 /*--------------------------------------------------------------
 # Departments
 --------------------------------------------------------------*/
-.departments {
+.product-category {
     overflow: hidden;
 }
 
-.departments .nav-tabs {
-    border: 0;
+.product-category .nav-tabs {
+    border: 15px;
 }
 
-.departments .nav-link {
+.product-category .category-list {
+    height: 250px;
+    overflow-y: scroll;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #039484;
+    opacity: unset;
+    padding: 10px;
+}
+
+.product-category .nav-link {
     border: 0;
     padding: 12px 15px 12px 0;
     transition: 0.3s;
-    color: #2c4964;
     border-radius: 0;
-    border-right: 2px solid #ebf1f6;
     font-weight: 600;
     font-size: 15px;
 }
 
-.departments .nav-link:hover {
-    color: #039484;
+.category-list .nav-tabs .nav-link.active {
+    border-style: none !important;
+    background-color: #039484 !important;
+    border-radius: 10px;
+    padding-left: 5px;
 }
 
-.departments .nav-link.active {
-    color: #039484;
-    border-color: #039484;
+.product-category .nav-link.active {
+    color: white !important;
+    background-color: #036156;
 }
 
-.departments .tab-pane.active {
+.product-category .tab-pane.active {
     animation: fadeIn 0.5s ease-out;
 }
 
-.departments .details h3 {
+.product-category .details h3 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #2c4964;
 }
 
-.departments .details p {
+.product-category .details p {
     color: #777777;
 }
 
-.departments .details p:last-child {
+.product-category .details p:last-child {
     margin-bottom: 0;
 }
 
-.departments a {
+.product-category a {
     color: #00413a;
 }
-.departments .btn-primary {
+.product-category .btn-primary {
     color: white !important;
 }
 
 @media (max-width: 992px) {
-    .departments .nav-link {
+    .product-category .nav-link {
         border: 0;
         padding: 15px;
     }
 
-    .departments .nav-link.active {
+    .product-category .nav-link.active {
         color: #fff;
         background: #039484;
     }
