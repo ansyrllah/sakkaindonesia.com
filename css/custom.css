@@ -1,22 +1,38 @@
 /* GENERAL */
 
 body {
-    color: #002921;
-    font-family: 'Poppins', sans-serif;
+    color: #6fa99d;
+    font-family: 'Poppins', sans-serif !important;
     margin-top: 150px;
 }
-/* body h2 {
-    font-family: 'Poppins', sans-serif;
+body h1 {
+    font-size: 41px;
+    font-weight: 700;
+}
+body h2 {
+    font-size: 34px;
     font-weight: 550;
     color: #002921;
-    font-size: 35px;
+}
+body h3 {
+    font-size: 28px;
+    font-weight: 550;
+    /* margin-bottom: 30px; */
 }
 body h4 {
-    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
     font-weight: 500;
     color: #002921;
-    font-size: 24px;
-} */
+}
+body h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+body p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
 /* END GENERAL */
 
 /* Button */
@@ -284,7 +300,7 @@ body h4 {
 }
 
 .about h2 {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 700;
     color: #002921;
 }
@@ -477,7 +493,7 @@ section {
 .section-title h2 {
     font-size: 32px;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
@@ -719,10 +735,10 @@ section {
     text-align: center;
 }
 
-.testimonials .section-header p {
+.testimonials .section-header h1 {
     margin: 10px 0 0 0;
     padding: 0;
-    font-size: 38px;
+    font-size: 34px;
     line-height: 42px;
     font-weight: 700;
     color: #002921;
