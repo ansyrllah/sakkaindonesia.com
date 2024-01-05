@@ -532,41 +532,6 @@ section {
 */
 /* End Section
 
-/* Product Details */
-/* .product-details .col img:hover {
-    opacity: 0.7;
-    color: #036156;
-}
-.product-details .col img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-.product-details .link-image:hover {
-    position: relative;
-    opacity: 0.5;
-    background-color: #00413a;
-    border-radius: 15px;
-}
-.product-details .link-image:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    overflow: hidden;
-}
-.product-details .kategori a {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.product-details > .btn {
-    border-width: 0;
-}
-.product-details img {
-    border-radius: 15px;
-} */
-/* End Product Details */
 
 /* Jenis Bahan */
 .jenis-bahan {
