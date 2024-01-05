@@ -10,6 +10,12 @@ const jumlahKatalogGolf = 0;
 const jumlahKatalogMotorcycle = 1;
 const jumlahKatalogTableTennis = 0;
 const jumlahKatalogArchery = 0;
+const jumlahKatalogCasual = 3;
+const jumlahKatalogEvent = 78;
+const jumlahKatalogMuslim = 0;
+const jumlahKatalogShirt = 1;
+const jumlahKatalogBadminton = 0;
+const jumlahKatalogSoccer = 0;
 
 // Data produk dengan kategori Running
 function getKatalogRunning(jumlahKatalog) {
@@ -163,6 +169,102 @@ function getKatalogArchery(jumlahKatalog) {
         return katalog;
     }
 }
+// Data produk dengan kategori Casual
+function getKatalogArchery(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Casual-${i}`,
+                image: `assets/catalogs/casual/casual (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Event
+function getKatalogArchery(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Event-${i}`,
+                image: `assets/catalogs/event/event (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Muslim
+function getKatalogArchery(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Muslim-${i}`,
+                image: `assets/catalogs/muslim/muslim (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Shirt
+function getKatalogArchery(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Shirt-${i}`,
+                image: `assets/catalogs/shirt/shirt (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Badminton
+function getKatalogArchery(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Badminton-${i}`,
+                image: `assets/catalogs/badminton/badminton (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Soccer
+function getKatalogArchery(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Soccer-${i}`,
+                image: `assets/catalogs/soccer/soccer (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
 
 // Fungsi untuk menampilkan produk berdasarkan kategori yang dipilih
 function showProducts(category) {
@@ -200,8 +302,26 @@ function showProducts(category) {
             products = getKatalogTableTennis(jumlahKatalogTableTennis);
             break;
 
-        case 'archery':
+        case 'arhery':
             products = getKatalogArchery(jumlahKatalogArchery);
+            break;
+        case 'casual':
+            products = getKatalogArchery(jumlahKatalogCasual);
+            break;
+        case 'event':
+            products = getKatalogArchery(jumlahKatalogEvent);
+            break;
+        case 'muslim':
+            products = getKatalogArchery(jumlahKatalogMuslim);
+            break;
+        case 'shirt':
+            products = getKatalogArchery(jumlahKatalogShirt);
+            break;
+        case 'badminton':
+            products = getKatalogArchery(jumlahKatalogBadminton);
+            break;
+        case 'soccer':
+            products = getKatalogArchery(jumlahKatalogSoccer);
             break;
 
         default:
