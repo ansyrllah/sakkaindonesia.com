@@ -5,14 +5,14 @@ const jumlahKatalogRunning = 0;
 const jumlahKatalogCycling = 0;
 const jumlahKatalogBasket = 0;
 const jumlahKatalogVolly = 3;
-const jumlahKatalogFutsal = 78;
+const jumlahKatalogFutsalSoccer = 78;
 const jumlahKatalogGolf = 0;
 const jumlahKatalogMotorcycle = 1;
 const jumlahKatalogTableTennis = 0;
 const jumlahKatalogArchery = 0;
 const jumlahKatalogCasual = 3;
 const jumlahKatalogEvent = 78;
-const jumlahKatalogMuslim = 0;
+const jumlahKatalogKoko = 32;
 const jumlahKatalogShirt = 1;
 const jumlahKatalogBadminton = 0;
 const jumlahKatalogSoccer = 0;
@@ -85,16 +85,16 @@ function getKatalogVolly(jumlahKatalog) {
     }
 }
 
-// Data produk dengan kategori Futsal
-function getKatalogFutsal(jumlahKatalog) {
+// Data produk dengan kategori FutsalSoccer
+function getKatalogFutsalSoccer(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
     } else {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
-                name: `Katalog Futsal-${i}`,
-                image: `assets/catalogs/futsal/futsal (${i}).webp`,
+                name: `Katalog FutsalSoccer-${i}`,
+                image: `assets/catalogs/futsal-soccer/futsal-soccer (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -201,16 +201,16 @@ function getKatalogArchery(jumlahKatalog) {
         return katalog;
     }
 }
-// Data produk dengan kategori Muslim
-function getKatalogArchery(jumlahKatalog) {
+// Data produk dengan kategori Koko
+function getKatalogKoko(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
     } else {
         for (let i = 1; i <= jumlahKatalog; i++) {
             const produk_item = {
-                name: `Katalog Muslim-${i}`,
-                image: `assets/catalogs/muslim/muslim (${i}).webp`,
+                name: `Katalog Koko-${i}`,
+                image: `assets/catalogs/koko/koko (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -286,8 +286,8 @@ function showProducts(category) {
             products = getKatalogVolly(jumlahKatalogVolly);
             break;
 
-        case 'futsal':
-            products = getKatalogFutsal(jumlahKatalogFutsal);
+        case 'futsal-soccer':
+            products = getKatalogFutsalSoccer(jumlahKatalogFutsalSoccer);
             break;
 
         case 'golf':
@@ -302,7 +302,7 @@ function showProducts(category) {
             products = getKatalogTableTennis(jumlahKatalogTableTennis);
             break;
 
-        case 'arhery':
+        case 'archery':
             products = getKatalogArchery(jumlahKatalogArchery);
             break;
         case 'casual':
@@ -311,8 +311,8 @@ function showProducts(category) {
         case 'event':
             products = getKatalogArchery(jumlahKatalogEvent);
             break;
-        case 'muslim':
-            products = getKatalogArchery(jumlahKatalogMuslim);
+        case 'koko':
+            products = getKatalogKoko(jumlahKatalogKoko);
             break;
         case 'shirt':
             products = getKatalogArchery(jumlahKatalogShirt);
@@ -329,6 +329,7 @@ function showProducts(category) {
             break;
     }
 
+    
     // Tampilkan produk dalam bentuk gambar dan nama produk
     const catalogList = document.getElementById('catalogs');
     if (products === 0) {
