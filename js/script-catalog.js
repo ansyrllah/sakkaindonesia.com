@@ -5,17 +5,21 @@ const jumlahKatalogRunning = 0;
 const jumlahKatalogCycling = 0;
 const jumlahKatalogBasket = 0;
 const jumlahKatalogVolly = 3;
-const jumlahKatalogFutsalSoccer = 78;
+const jumlahKatalogFutsalSoccer = 83;
 const jumlahKatalogGolf = 0;
 const jumlahKatalogMotorcycle = 1;
 const jumlahKatalogTableTennis = 0;
 const jumlahKatalogArchery = 0;
-const jumlahKatalogCasual = 3;
-const jumlahKatalogEvent = 78;
+const jumlahKatalogCasual = 4;
+const jumlahKatalogEvent = 14;
 const jumlahKatalogKoko = 32;
-const jumlahKatalogShirt = 1;
-const jumlahKatalogBadminton = 0;
+const jumlahKatalogShirt = 3;
+const jumlahKatalogBadminton = 4;
 const jumlahKatalogSoccer = 0;
+const jumlahKatalogVarsity = 0;
+const jumlahKatalogJaket = 0;
+const jumlahKatalogRompi = 0;
+const jumlahKatalogKemeja = 46;
 
 // Data produk dengan kategori Running
 function getKatalogRunning(jumlahKatalog) {
@@ -61,6 +65,70 @@ function getKatalogBasket(jumlahKatalog) {
             const produk_item = {
                 name: `Katalog Basket-${i}`,
                 image: `assets/catalogs/basket/basket (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Rompi
+function getKatalogRompi(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Rompi-${i}`,
+                image: `assets/catalogs/rompi/rompi (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Jaket
+function getKatalogJaket(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Jaket-${i}`,
+                image: `assets/catalogs/jaket/jaket (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Kemeja
+function getKatalogKemeja(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Kemeja-${i}`,
+                image: `assets/catalogs/kemeja/kemeja (${i}).webp`,
+            };
+            katalog.push(produk_item);
+        }
+        return katalog;
+    }
+}
+// Data produk dengan kategori Varsity
+function getKatalogVarsity(jumlahKatalog) {
+    const katalog = [];
+    if (jumlahKatalog === 0) {
+        return 0;
+    } else {
+        for (let i = 1; i <= jumlahKatalog; i++) {
+            const produk_item = {
+                name: `Katalog Varsity-${i}`,
+                image: `assets/catalogs/varsity/varsity (${i}).webp`,
             };
             katalog.push(produk_item);
         }
@@ -170,7 +238,7 @@ function getKatalogArchery(jumlahKatalog) {
     }
 }
 // Data produk dengan kategori Casual
-function getKatalogArchery(jumlahKatalog) {
+function getKatalogCasual(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
@@ -186,7 +254,7 @@ function getKatalogArchery(jumlahKatalog) {
     }
 }
 // Data produk dengan kategori Event
-function getKatalogArchery(jumlahKatalog) {
+function getKatalogEvent(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
@@ -218,7 +286,7 @@ function getKatalogKoko(jumlahKatalog) {
     }
 }
 // Data produk dengan kategori Shirt
-function getKatalogArchery(jumlahKatalog) {
+function getKatalogShirt(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
@@ -234,7 +302,7 @@ function getKatalogArchery(jumlahKatalog) {
     }
 }
 // Data produk dengan kategori Badminton
-function getKatalogArchery(jumlahKatalog) {
+function getKatalogBadminton(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
@@ -250,7 +318,7 @@ function getKatalogArchery(jumlahKatalog) {
     }
 }
 // Data produk dengan kategori Soccer
-function getKatalogArchery(jumlahKatalog) {
+function getKatalogSoccer(jumlahKatalog) {
     const katalog = [];
     if (jumlahKatalog === 0) {
         return 0;
@@ -306,22 +374,31 @@ function showProducts(category) {
             products = getKatalogArchery(jumlahKatalogArchery);
             break;
         case 'casual':
-            products = getKatalogArchery(jumlahKatalogCasual);
+            products = getKatalogCasual(jumlahKatalogCasual);
             break;
         case 'event':
-            products = getKatalogArchery(jumlahKatalogEvent);
+            products = getKatalogEvent(jumlahKatalogEvent);
             break;
         case 'koko':
             products = getKatalogKoko(jumlahKatalogKoko);
             break;
         case 'shirt':
-            products = getKatalogArchery(jumlahKatalogShirt);
+            products = getKatalogShirt(jumlahKatalogShirt);
             break;
         case 'badminton':
-            products = getKatalogArchery(jumlahKatalogBadminton);
+            products = getKatalogBadminton(jumlahKatalogBadminton);
             break;
         case 'soccer':
-            products = getKatalogArchery(jumlahKatalogSoccer);
+            products = getKatalogSoccer(jumlahKatalogSoccer);
+            break;
+        case 'rompi':
+            products = getKatalogRompi(jumlahKatalogRompi);
+            break;
+        case 'varsity':
+            products = getKatalogVarsity(jumlahKatalogVarsity);
+            break;
+        case 'kemeja':
+            products = getKatalogKemeja(jumlahKatalogKemeja);
             break;
 
         default:
